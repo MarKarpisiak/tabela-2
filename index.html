@@ -5,8 +5,11 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA_Compatible" conent="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	<title>Tabela pracowników</title>
+	
+
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 
 
@@ -22,103 +25,125 @@
 
 <body>
 
+
+<section class="table">
+
 <div class="container">
 
 	<h3>tabela pracowników</h3>
 
-	<div class="leftcontainer">
-
-		<div class="element">
-		<h4>wyszukiwanie:</h4>
 		
 
+		<div class="leftcontainer">
 
-		<input class="search" type="text" id="myInputTextField" placeholder="szukaj pracownika...">
+			<div class="row">		
 
-
-
-		</br></br>
-		
-		<label class="dropdown">
-		<select class="select" style="width:230px; color:rgb(102, 102, 102);" id="dzial"><option>wybierz dział</option></select>
-		</label>
+				<div class="element col-md-10">
+				<h4>wyszukiwanie:</h4>
+				
 
 
-		</br></br>
-		
-		
-			<div cellspacing="5" cellpadding="5">
-					<div class="text">wyszukaj pracownika wpisując przedział wynagrodzenia:</div> </br></br>
-					<input class="range" type="number" id="min" name="min" placeholder="kwota min...">
+				<input class="search" type="text" id="myInputTextField" placeholder="szukaj pracownika...">
 
-					<input class="range" type="number" id="max" name="max" placeholder="kwota max..." >
+
+
+				</br></br>
+				
+				<label class="dropdown">
+				<select class="select" style=" width:200%; color:rgb(102, 102, 102);" id="dzial"><option>wybierz dział</option></select>
+				</label>
+
+
+				</br></br>
+				
+				
+					<div cellspacing="5" cellpadding="5">
+							<div class="text">wyszukaj pracownika wpisując przedział wynagrodzenia:</div> </br></br>
+							<input class="range" type="number" id="min" name="min" placeholder="kwota min...">
+
+							<input class="range" type="number" id="max" name="max" placeholder="kwota max..." >
+					</div>
+
+
+					<div class="button" id="addRow">dodaj pracownika</div>
+
+				</div>
+				
 			</div>
-
-
-			<div class="button" id="addRow">dodaj pracownika</div>
-
 		</div>
 		
-	</div>
+		
+		<div class="row">
 
-	<div class="tablecontainer">
+			<div class="tablecontainer col-md-11">
 
-		<table id="tabela" class="tabela table-hover table-borderless" cellspacing="0">
-			<thead>	
-					<tr>
-						<th>imię</th>
-						<th>nazwisko</th>
-						<th>dział</th>
-						<th>wynagrodzenie [PLN]</th>
-					</tr>
-					
-				</thead>
-					</tr>
-				<tbody>
-					<tr>
-						<td>Jan</td>
-						<td>Kowalski</td>
-						<td>IT</td>
-						<td>3000</td>
-					</tr>
-					<tr>
-						<td>Anna</td>
-						<td>Bąk</td>
-						<td>Administracja</td>
-						<td>2400.50</td>
-					</tr>
-					<tr>
-						<td>Paweł</td>
-						<td>Zabłocki</td>
-						<td>IT</td>
-						<td>3300</td>
-					</tr>
-					<tr>
-						<td>Tomasz</td>
-						<td>Osiecki</td>
-						<td>Administracja</td>
-						<td>2100</td>
-					</tr>
-					<tr>
-						<td>Iwona</td>
-						<td>Leihs-Gutowska</td>
-						<td>Handlowiec</td>
-						<td>3100</td>
-					</tr>
-					
-				</tbody>
+				<table id="tabela" class="tabela table-hover table-borderless" cellspacing="0">
+					<thead>	
+							<tr>
+								<th>imię</th>
+								<th>nazwisko</th>
+								<th>dział</th>
+								<th>wynagrodzenie [PLN]</th>
+							</tr>
+							
+						</thead>
+							</tr>
+						<tbody>
+							<tr>
+								<td>Jan</td>
+								<td>Kowalski</td>
+								<td>IT</td>
+								<td>3000</td>
+							</tr>
+							<tr>
+								<td>Anna</td>
+								<td>Bąk</td>
+								<td>Administracja</td>
+								<td>2400.50</td>
+							</tr>
+							<tr>
+								<td>Paweł</td>
+								<td>Zabłocki</td>
+								<td>IT</td>
+								<td>3300</td>
+							</tr>
+							<tr>
+								<td>Tomasz</td>
+								<td>Osiecki</td>
+								<td>Administracja</td>
+								<td>2100</td>
+							</tr>
+							<tr>
+								<td>Iwona</td>
+								<td>Leihs-Gutowska</td>
+								<td>Handlowiec</td>
+								<td>3100</td>
+							</tr>
+							
+						</tbody>
 
-				<tfoot>
-					<tr>
-						<th  colspan="3" style="text-align:right">suma:</th>
-						<th></th>
-					</tr>
-				</tfoot>
-		</table>
+						<tfoot>
+							<tr>
+								<th  colspan="3" style="text-align:right">suma:</th>
+								<th></th>
+							</tr>
+						</tfoot>
+				</table>
 
-	</div>
+			</div>
 
-</div>
+		</div>
+
+	
+
+
+
+</section>
+
+
+
+
+
 
 
 
